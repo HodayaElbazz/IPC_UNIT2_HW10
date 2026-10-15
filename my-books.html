@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library – My Books</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="toolbar">
+    <a href="index.html" class="logo">📚 Library</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="books.html">Books</a>
+      <a href="my-books.html" class="active">My Books</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="page-title">My Books</h1>
+    <p class="subtitle">Everything you've read, borrowed and ordered.</p>
+
+    <section class="shelf">
+      <div class="shelf-header">
+        <h2>📖 Books I Have Now</h2>
+        <span class="count" id="now-count"></span>
+      </div>
+      <ul class="shelf-list" id="now-list"></ul>
+    </section>
+
+    <section class="shelf">
+      <div class="shelf-header">
+        <h2>⏳ Ordered – Not Received Yet</h2>
+        <span class="count" id="ordered-count"></span>
+      </div>
+      <ul class="shelf-list" id="ordered-list"></ul>
+    </section>
+
+    <section class="shelf">
+      <div class="shelf-header">
+        <h2>✓ Books I Already Read</h2>
+        <span class="count" id="read-count"></span>
+      </div>
+      <ul class="shelf-list" id="read-list"></ul>
+    </section>
+  </main>
+
+  <footer>© Library</footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/my-books.js"></script>
+</body>
+</html>

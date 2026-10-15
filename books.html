@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library – Books</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="toolbar">
+    <a href="index.html" class="logo">📚 Library</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="books.html" class="active">Books</a>
+      <a href="my-books.html">My Books</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="page-title">Our Books</h1>
+    <p class="subtitle" id="count"></p>
+
+    <div class="controls">
+      <div class="control">
+        <label for="genre">Genre</label>
+        <select id="genre">
+          <option value="all">All genres</option>
+        </select>
+      </div>
+      <div class="control">
+        <label for="sort">Order by</label>
+        <select id="sort">
+          <option value="az">Title: A → Z</option>
+          <option value="za">Title: Z → A</option>
+          <option value="newest">Release date: newest first</option>
+          <option value="oldest">Release date: oldest first</option>
+          <option value="author">Author: A → Z</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="book-grid" id="book-grid"></div>
+  </main>
+
+  <footer>© Library</footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/books.js"></script>
+</body>
+</html>
